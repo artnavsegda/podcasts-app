@@ -1,8 +1,8 @@
-const fetchPodcasts = (authKey) => {
+const fetchPodcasts = (authKey: string) => {
     return { type: 'FETCHED_PODCASTS', key: authKey }
 };
 
-const fetchEpisodes = (podcastID) => {
+const fetchEpisodes = (podcastID: string) => {
     return { type: 'FETCHED_EPISODES', id: podcastID }
 };
 

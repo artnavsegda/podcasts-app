@@ -23,7 +23,7 @@ sagaMiddleware.run(watchFetchPodcasts)
 sagaMiddleware.run(watchFetchEpisodes)
 
 const soundObject = new Audio.Sound();
-async function audioPlay(source)
+async function audioPlay(source: string)
 {
   const status = await soundObject.getStatusAsync();
   console.log(status);
